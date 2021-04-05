@@ -128,7 +128,7 @@ img {
 
 /*===== NAV =====*/
 .nav {
-  letter-spacing: 1px;
+  letter-spacing: .5px;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
@@ -491,7 +491,7 @@ img {
   }
 
   .home {
-    height: 100vh;
+    height: 83vh;
   }
   .home__social {
     padding-top: 0;
@@ -506,7 +506,8 @@ img {
   .home__img {
     /* width: 457px; */
     z-index: -1;
-    bottom: 15%;
+    /* bottom: 15%; */
+    top: 10%;
   }
 
   .about__container,

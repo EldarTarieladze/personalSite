@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- =====BOX ICONS===== -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+  <script>
+    $(function () {
+      $("#footer").load("footer.html");
+    });
+  </script>
+  <script>
+      $(document).ready(function () {
+    $('.toggle li a').click(function(e) {
+
+        $('.toggle li.active').removeClass('active');
+
+        var $parent = $(this).parent();
+        $parent.addClass('active');
+        e.preventDefault();
+    });
+});
+  </script>
+  <script>
+      function toggleu(){
+            document.getElementById("22").style.display = "block"
+          document.getElementById("21").style.display = "block"
+          document.getElementById("11").style.display = "none"
+          document.getElementById("12").style.display = "none"
+      }
+      function toggleq(){
+          document.getElementById("21").style.display = "none"
+          document.getElementById("22").style.display = "none"
+          document.getElementById("11").style.display = "block"
+          document.getElementById("12").style.display = "block"
+
+      }
+  </script>
+  <style>
+
+/* Style the active class, and buttons on mouse-over */
+.active, .btn:hover {
+  color: white;
+}
+
+  </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="/index.html" class="nav__link">მთავარი</a>
+              </li>
+              <li class="nav__item nav__bio">
+                <a href="#about" class="nav__link">Bio</a>
+                <div class="nav__item dropdown-content">
+                  <a class="nav__link" href="./about.html">ჩემს შესახებ</a>
+                  <a class="nav__link" href="./about.html#cv">Curriculum Vitae (CV)</a>
+                  <a class="nav__link" href="./about.html#wsk">წაკითხული სალექციო კურსები</a>
+                </div>
+              </li>
+              <li class="nav__item nav__st">
+                <a href="#article" class="nav__link active">ჩემი სტატიები</a>
+                <div class="nav__item dropdown-content_st">
+                  <a class="nav__link nav__link__dropdown" href="#">გამოქვეყნებული საქართველოში</a>
+                  <a class="nav__link nav__link__dropdown" href="#">გამოქვეყნებული უცხოეთში</a>
+                </div>
+              </li>
+              <li class="nav__item">
+                <a href="#work" class="nav__link">Work</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">კონტაქტი</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a href="#" class="nav__logo">ზოიძე</a>
+          </div>
+    
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-menu"></i>
+          </div>
+        </nav>
+      </header>
+
+      <main class="l-main">
+        <!--===== IMG =====-->
+        <section class="home bd-grid" id="home">
+          <img class="home__img" src="assets/img/aritcle_img.jpg" style="height: calc(60vh - 3rem);" alt="" />
+        </section>
+        <section class="skills section bd-grid" style="border: 1px solid red;">
+            <h2 class="section-title">სტატიები</h2>
+            <div class="" style="text-align: center; justify-content: center; margin-bottom: 10px;">
+                <ul class="toggle nav-list" style="max-width: 700px; display: flex; justify-content: space-between; margin: 0 auto;">
+                    <li class="about__btn active" onclick="toggleq()"><a href="/">სტატიები საქართველოში</a></li>
+                    <li class="about__btn" onclick="toggleu()"><a href="/link2">სტატიები უცხოეთში</a></li>
+                </ul>
+            </div>
+            <div class="home__statia_data" id="11">
+                <a href="">
+                  <div class="statia__names">
+                    <i class="bx bxs-hot statia__icon"></i>
+                    <span class="statia__names">ეკონომიკა საქართველოში</span>
+                  </div>
+                  <div class="home_content_statia statia"></div>
+                </a>
+              </div>
+              <div class="home__statia_data" id="12">
+                <a href="">
+                  <div class="statia__names">
+                    <i class="bx bxs-hot statia__icon"></i>
+                    <span class="statia__names">ეკონომიკური მდგომარეობა კორონა ვირუსის ფონზე</span>
+                  </div>
+                  <div class="home_content_statia statia"></div>
+                </a>
+              </div>
+              <div class="home__statia_data" id="21">
+                <a href="">
+                  <div class="statia__names">
+                    <i class="bx bxs-hot statia__icon"></i>
+                    <span class="statia__names">რელიგიის ზეგავლენა ეკონომიკაზე</span>
+                  </div>
+                  <div class="home_content_statia statia"></div>
+                </a>
+              </div>
+              <div class="home__statia_data" id="22">
+                <a href="">
+                  <div class="statia__names">
+                    <i class="bx bxs-hot statia__icon"></i>
+                    <span class="statia__names">როგორ გავზარდოთ შემოსავალი</span>
+                  </div>
+                  <div class="home_content_statia statia"></div>
+                </a>
+              </div>
+
+        </section>
+
+
+
+
+      </main>
+    
+</body>
+</html>
